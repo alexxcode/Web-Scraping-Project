@@ -3,7 +3,6 @@ import requests
 from selenium import webdriver
 
 
-
 url = 'http://blog.samaltman.com'
 dir_name = 'sam-altman'
 os.makedirs(dir_name, exist_ok=True)  # Create a directory for saving all favorite blog posts
