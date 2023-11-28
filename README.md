@@ -1,38 +1,36 @@
-# Web-Scraping Project (Web Scraping Sam Altman’s Blog Posts)
+# Sam Altman’s Blog Scraper and Sentiment Analysis Project 
 
-This Python script scrapes blog posts from Sam Altman’s website and saves them locally. It’s a handy tool for archiving and reading his insightful content.
+This Python script allows you to scrape and analyze content from Sam Altman’s blog. You can perform various actions, such as searching for post titles, downloading posts, and analyzing sentiment.
 
+# Prerequisites
+- Python 3.x
 
-**Objectives**
-
-Retrieve Relevant Blog Posts: The script allows you to input specific blog post titles (separated by commas). It then fetches the corresponding blog posts from Sam Altman’s blog.
-
-Save Locally: The downloaded blog posts are saved as HTML files in a directory named after Sam Altman. You can easily access and read them offline.
-
-Handle Errors Gracefully: The script handles errors such as invalid URLs or inaccessible web pages. It also provides a list of incorrect URLs for manual verification.
+- Required Python packages: requests, beautifulsoup4, and pandas. 
 
 
-**How It Works**
+# Usage
+Clone this repository or download the sam-altman-blog-scraper.py file.
+Open a terminal or command prompt and navigate to the directory containing the script.
+Run the script using python sam-altman-blog-scraper.py.
 
--User Input: The script prompts you to enter the titles of Sam Altman’s blog posts. You can input multiple titles separated by commas.
+# Menu Options
 
--URL Generation: For each title, the script constructs a URL by converting the title to lowercase, replacing special characters, and joining it with the base blog URL.
+**Search all post titles on Sam Altman’s blog: Scrapes the blog and saves the titles to a CSV file (san_titles.csv).**
 
--HTTP Requests: It sends HTTP requests to the generated URLs to retrieve the blog content. If successful, it saves the content as an HTML file.
+**Show the titles of Sam Altman’s blog posts: Displays the titles from the CSV file.**
+**Download Sam Altman’s posts in sam-altman directory: Downloads the blog posts and saves them in a specified directory.**
 
--Error Handling: If an error occurs (e.g., invalid URL or inaccessible page), the script keeps track of the problematic URLs and continues with the next title.
+**Analyze Sentiment of certain Sam Altman’s post: Analyzes the sentiment of a specific post (requires NLP libraries).**
 
--Fallback Search: For incorrect URLs, the script uses a web browser (in this case, Microsoft Edge) to search for the correct URL based on modified title keywords.
+***Option 5 (BUILDING): Placeholder for future functionality.***
 
--Browser Automation: The script automates the browser to find the correct URL on Google search results. It then saves the corrected content as an HTML file.
+**Exit: Quits the program.**
 
--Usage
-Install Dependencies: Make sure you have Python installed. Install the required packages using pip install requests selenium.
 
--Run the Script: Execute the Python script. It will prompt you for blog post titles.
+# Customization
 
--Check Output: Navigate to the specified directory (e.g., sam-altman) to find the downloaded HTML files.
+Adjust the get_titles, PostInDir, and Sentiment functions to match specific requirements.
+Modify the url and dir_name variables according to your needs.
 
-**Notes:**
-Adjust the directory name (sam-altman) and other settings as needed.
-Ensure you have the Chrome WebDriver (for Selenium) installed and configured
+# Acknowledgments
+This script was inspired by Sam Altman’s insightful blog posts. Feel free to explore and adapt it for your own projects!
