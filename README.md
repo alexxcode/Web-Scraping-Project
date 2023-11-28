@@ -15,16 +15,17 @@ Run the script using python sam-altman-blog-scraper.py.
 
 # Menu Options
 
-**Search all post titles on Sam Altman’s blog: Scrapes the blog and saves the titles to a CSV file (san_titles.csv).**
+- **Search all post titles on Sam Altman’s blog: Scrapes the blog and saves the titles to a CSV file (san_titles.csv).**
 
-**Show the titles of Sam Altman’s blog posts: Displays the titles from the CSV file.**
-**Download Sam Altman’s posts in sam-altman directory: Downloads the blog posts and saves them in a specified directory.**
+- **Show the titles of Sam Altman’s blog posts: Displays the titles from the CSV file.**
 
-**Analyze Sentiment of certain Sam Altman’s post: Analyzes the sentiment of a specific post (requires NLP libraries).**
+- **Download Sam Altman’s posts in sam-altman directory: Downloads the blog posts and saves them in a specified directory.**
 
-***Option 5 (BUILDING): Placeholder for future functionality.***
+- **Analyze Sentiment of certain Sam Altman’s post: Analyzes the sentiment of a specific post (requires NLP libraries).**
 
-**Exit: Quits the program.**
+- ***Option 5 (BUILDING): Placeholder for future functionality.***
+
+- **Exit: Quits the program.**
 
 
 # Customization
